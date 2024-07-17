@@ -18,7 +18,7 @@ export default function Home() {
             Programmer. Student. Sometimes Chess Player.
             </p>
             <p className="text-base text-zinc-600 mt-6 sm:mt-4">
-              Hey, I'm Pranav. I'm a <span className="font-bold">TypeScript Engineer</span> focused on efficient application development. I'm passionate about coding and constantly learning to improve.
+              Hey, I&apos;m Pranav. I&apos;m a <span className="font-bold">TypeScript Engineer</span> focused on efficient application development. I&apos;m passionate about coding and constantly learning to improve.
             </p>
             <p className="text-base text-zinc-600 mt-4">
               Previously, I developed innovative web solutions and applications. I also created projects like a <a href="https://bloggitt.vercel.app/" target="_blank" className="font-bold underline cursor-pointer">Blogging Site</a>

@@ -1,5 +1,5 @@
-export default function() {
+export default function Projects() {
     return <>
-        the projects page under construction
+        Projects page under constuction
     </>
 }

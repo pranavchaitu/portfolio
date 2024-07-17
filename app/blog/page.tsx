@@ -1,5 +1,5 @@
-export default function() {
+export default function Blog() {
     return <>
-        the blog page under construction
+        Blog page under constuction
     </>
 }
