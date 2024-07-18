@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopBar />
-        <div className="mt-20 sm:mt-28">
+        <div className="mt-16 sm:mt-24">
           {children}
         </div>
       </body>
