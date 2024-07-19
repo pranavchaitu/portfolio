@@ -5,10 +5,10 @@ import { useSelectedLayoutSegments } from "next/navigation";
 import React, { ReactNode } from "react";
 
 const meta : Record<string,{ title:string,description : string }>  = {
-    about: {
-        title: "I'm Pranav Teja. I'm a Software Developer.",
-        description: "A brief introduction to me, my background, and my interests.",
-    },
+    // about: {
+    //     title: "I'm Pranav Teja. I'm a Software Developer.",
+    //     description: "A brief introduction to me, my background, and my interests.",
+    // },
     projects: {
         title: "Things I've made trying to put my dent in the universe.",
         description:
@@ -30,6 +30,7 @@ export default function Container({ children } : {
     children : ReactNode
 }) {
     const segment = useSelectedLayoutSegments()
+    const currentMetaData = meta[segment[0]] || { title : "",description : "" }
     return <div className="mt-12 sm:mt-24">
         {segment.length == 1 && (
             <div className="p-6 flex justify-center">
@@ -46,11 +47,11 @@ export default function Container({ children } : {
                                 />
                             </a>
                             <p className="font-bold text-3xl lg:text-4xl mt-6 sm:mt-4 text-gray-800">
-                                {meta[segment[0]].title}
+                                {currentMetaData.title}
                             </p>
                             {/* &apos; should replace with this */}
                             <p className="text-base text-zinc-600 mt-6 sm:mt-4">
-                                {meta[segment[0]].description}
+                                {currentMetaData.description}
                             </p>
                         </div>
                     </div>
