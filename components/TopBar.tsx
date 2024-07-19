@@ -34,7 +34,7 @@ export function TopBar() {
     }, [controlNavbar]);
 
     return <>
-        <div className={`transition-transform duration-300 transform ${show ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className={`transition-transform duration-500 transform ${show ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="sm:hidden">
                 <MenuBar />
             </div>

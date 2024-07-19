@@ -7,6 +7,11 @@ export function NavBar() {
                         Projects
                     </div>
                 </a>
+                <a href="/resume">
+                    <div className="cursor-pointer hover:text-teal-500">
+                        Resume
+                    </div>
+                </a>
                 <a href="/blog">
                     <div className="cursor-pointer hover:text-teal-500">
                         Blog
