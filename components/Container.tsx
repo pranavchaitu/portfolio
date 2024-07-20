@@ -5,10 +5,10 @@ import { useSelectedLayoutSegments } from "next/navigation";
 import React, { ReactNode } from "react";
 
 const meta : Record<string,{ title:string,description : string }>  = {
-    // about: {
-    //     title: "I'm Pranav Teja. I'm a Software Developer.",
-    //     description: "A brief introduction to me, my background, and my interests.",
-    // },
+    about: {
+        title: "I'm Pranav. I'm a Software Developer.",
+        description: "A brief introduction to me, my background, and my interests.",
+    },
     projects: {
         title: "Things I've made trying to put my dent in the universe.",
         description:
@@ -33,13 +33,13 @@ export default function Container({ children } : {
     const currentMetaData = meta[segment[0]] || { title : "",description : "" }
     return <div className="mt-12 sm:mt-24">
         {segment.length == 1 && (
-            <div className="p-6 flex justify-center">
+            <div className="px-6 pt-6 flex justify-center">
                 <div className="w-screen max-w-screen-md lg:max-w-screen-lg">
                     <div className="flex justify-start max-w-2xl">
                         <div>
                             <a href="/" className="absolute top-7">
                                 <Image 
-                                    src={'/profile.png'}
+                                    src={'/self/profile.png'}
                                     alt={'profile'}
                                     width={40}
                                     height={40}

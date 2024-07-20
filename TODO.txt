@@ -1,0 +1,4 @@
+- blogs page 
+- about page 
+
+-if chance add the movement to navbar and not to menu bar replace navbar with dock

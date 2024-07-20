@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex justify-center max-w-2xl">
           <div className="p-3">
             <Image
-              src="/profile.png"
+              src="/self/profile.png"
               alt="profile"
               width={60}
               height={60}
