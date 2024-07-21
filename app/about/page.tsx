@@ -9,7 +9,7 @@ export default function Home() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 p-4">
                     <StudyData 
-                        img={"pragati.png"}
+                        img={"pragati.jpg"}
                         name={"Pragati Engineering College"}
                         degree={"Bachelor of Technology"}
                         course={"Computer Science and Engineering"}

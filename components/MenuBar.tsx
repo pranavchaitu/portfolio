@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { useState } from "react"
 
 export function MenuBar() {
@@ -16,21 +17,26 @@ export function MenuBar() {
 
                 {toggle ? <div className="absolute z-10 bg-white top-8 right-2 rounded-lg shadow">
                     <div className="text-md">
-                        <a href="/projects">
+                        <Link href="/about">
+                            <div className="p-2 border-b hover:bg-gray-50">
+                                About
+                            </div>
+                        </Link>
+                        <Link href="/projects">
                             <div className="p-2 border-b hover:bg-gray-50">
                                 Projects
                             </div>
-                        </a>
-                        <a href="/resume">
-                            <div className="p-2 hover:bg-gray-50 border-b">
-                                Resume
-                            </div>
-                        </a>
-                        <a href="/blog">
+                        </Link>
+                        <Link href="/blog">
                             <div className="p-2 hover:bg-gray-50">
                                 Blog
                             </div>
-                        </a>
+                        </Link>
+                        <Link href="/resume">
+                            <div className="p-2 hover:bg-gray-50 border-b">
+                                Resume
+                            </div>
+                        </Link>
                     </div>
                 </div> : null }
             </div>

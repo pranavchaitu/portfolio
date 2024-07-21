@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import Link from "next/link";
 import { useSelectedLayoutSegments } from "next/navigation";
 import React, { ReactNode } from "react";
 
@@ -37,7 +38,7 @@ export default function Container({ children } : {
                 <div className="w-screen max-w-screen-md lg:max-w-screen-lg">
                     <div className="flex justify-start max-w-2xl">
                         <div>
-                            <a href="/" className="absolute top-7">
+                            <Link href="/" className="absolute top-7">
                                 <Image 
                                     src={'/self/profile.png'}
                                     alt={'profile'}
@@ -45,7 +46,7 @@ export default function Container({ children } : {
                                     height={40}
                                     className="rounded-full"    
                                 />
-                            </a>
+                            </Link>
                             <p className="font-bold text-3xl lg:text-4xl mt-6 sm:mt-4 text-gray-800">
                                 {currentMetaData.title}
                             </p>

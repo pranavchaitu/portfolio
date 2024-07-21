@@ -35,7 +35,7 @@ export default function Home() {
                   <GitHubIcon/>
                 </div>
               </a>              
-              <a href="https://www.linkedin.com/in/pranav-repuri-342878259/" target="_blank">
+              <a href="https://www.linkedin.com/in/pranavchaitu" target="_blank">
                 <div className="w-6">
                   <LinkedInIcon/>
                 </div>
