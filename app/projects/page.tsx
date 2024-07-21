@@ -20,7 +20,7 @@ export default function Home() {
     return <div>
         {/* the projects */}
         <div className="mt-4 flex flex-col items-center">
-            <div className="m-2 w-screen max-w-screen-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="m-12 w-screen max-w-screen-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project,i) => 
                     <div key={i}>
                         <ProjectItem

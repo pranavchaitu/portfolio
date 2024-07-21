@@ -28,12 +28,12 @@ export function MenuBar() {
                             </div>
                         </Link>
                         <Link href="/blog">
-                            <div className="p-2 hover:bg-gray-50">
+                            <div className="p-2 hover:bg-gray-50 border-b">
                                 Blog
                             </div>
                         </Link>
                         <Link href="/resume">
-                            <div className="p-2 hover:bg-gray-50 border-b">
+                            <div className="p-2 hover:bg-gray-50">
                                 Resume
                             </div>
                         </Link>

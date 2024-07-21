@@ -4,7 +4,7 @@ export default function Home() {
     return <>
         <div className="mt-4 flex flex-col items-center">
             <div className="m-2 w-screen max-w-screen-lg">
-                <div className="font-bold text-2xl text-gray-500">
+                <div className="font-bold text-2xl ml-10 text-gray-500">
                     Education :
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 p-4">
