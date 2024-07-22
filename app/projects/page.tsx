@@ -14,23 +14,24 @@ export default function Home() {
     },{
         name : "Dukaan",
         link : "https://dukaan-by-pranav.vercel.app",
-        description : "a responsive dashboard clone of dukaan uses the detais as a state and renders them",
+        description : "a responsive dashboard clone of dukaan uses the details as a state and renders them",
         icon: "/projects/icons/dukaan.svg"
     }]
     return <div>
-        {/* the projects */}
-        <div className="mt-4 flex flex-col items-center">
-            <div className="m-12 w-screen max-w-screen-lg grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                {projects.map((project,i) => 
-                    <div key={i}>
-                        <ProjectItem
-                            name={project.name}
-                            link={project.link}
-                            description={project.description}
-                            icon={project.icon}
-                        />
-                    </div>
-                )}
+        <div className="mt-6 flex justify-center">
+            <div className="w-screen max-w-screen-md lg:max-w-screen-lg">
+                <div className="mx-2 sm:m-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    {projects.map((project,i) => 
+                        <div key={i}>
+                            <ProjectItem
+                                name={project.name}
+                                link={project.link}
+                                description={project.description}
+                                icon={project.icon}
+                            />
+                        </div>
+                    )}
+                </div>
             </div>
         </div>      
     </div>

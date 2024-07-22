@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function ProjectItem({ key,link,icon,name,description } : Record<string,string>) {
     return <a href={link} target="_blank">
-        <div className="hover:bg-slate-50 p-6 rounded-3xl">
+        <div className="hover:bg-slate-50 py-6 px-4 rounded-3xl">
             <Image 
                 src={icon}
                 alt={'icon'}
