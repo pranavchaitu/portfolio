@@ -1,11 +1,18 @@
 import Image from "next/image";
 
-export function ProjectItem({ key,link,icon,name,description } : Record<string,string>) {
+interface Project {
+    link : string;
+    icon : string;
+    name : string;
+    description : string
+}
+
+export function ProjectItem({ link,icon,name,description } : Project) {
     return <a href={link} target="_blank">
         <div className="hover:bg-slate-50 py-6 px-4 rounded-3xl">
             <Image 
                 src={icon}
-                alt={'icon'}
+                alt={'project'}
                 width={30}
                 height={30}
                 className=""    

@@ -1,13 +1,14 @@
 import Image from "next/image"
 
 export default function Home() {
-    return <>
-        <div className="mt-4 flex flex-col items-center">
-            <div className="m-2 w-screen max-w-screen-lg">
-                <div className="font-bold text-2xl ml-10 text-gray-500">
+    return <div>
+        <div className="mx-2 flex justify-center">
+            <div className="w-screen max-w-screen-md lg:max-w-screen-lg">
+                <p className="font-bold text-4xl lg:text-4xl text-gray-800 ml-4 lg:m-0">
                     Education :
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-3 p-4">
+                </p>
+                <br />  
+                <div className="border-l grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
                     <StudyData 
                         img={"pragati.jpg"}
                         name={"Pragati Engineering College"}
@@ -31,7 +32,7 @@ export default function Home() {
                 </div>
             </div>
         </div> 
-    </>
+    </div>
 }
 
 function StudyData({ img,name,degree,course,marks,courseWork,years,link } : {
@@ -45,12 +46,12 @@ function StudyData({ img,name,degree,course,marks,courseWork,years,link } : {
     link : string
 }) {
     return <a href={link} target="_blank">
-        <div className="hover:bg-slate-50 p-6 rounded-3xl flex flex-col gap-4">
+        <div className="hover:bg-slate-50 py-6 px-4 rounded-3xl flex flex-col gap-4">
             <Image
                 src={`/self/education/${img}`}
                 alt={'icon'}
                 width={30}
-                height={30}
+                height={30} 
                 className=""    
             />
             <div className="text-medium font-medium">

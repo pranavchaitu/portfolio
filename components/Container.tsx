@@ -32,9 +32,9 @@ export default function Container({ children } : {
 }) {
     const segment = useSelectedLayoutSegments()
     const currentMetaData = meta[segment[0]] || { title : "",description : "" }
-    return <div className="mt-12 sm:mt-24">
+    return <div className="mt-20 sm:mt-24">
         {segment.length == 1 && (
-            <div className="px-6 pt-6 flex justify-center">
+            <div className="mx-6 flex justify-center mb-6">
                 <div className="w-screen max-w-screen-md lg:max-w-screen-lg">
                     <div className="flex justify-start max-w-2xl">
                         <div>
@@ -47,7 +47,7 @@ export default function Container({ children } : {
                                     className="rounded-full"    
                                 />
                             </Link>
-                            <p className="font-bold text-3xl lg:text-4xl mt-6 sm:mt-4 text-gray-800">
+                            <p className="font-bold text-4xl lg:text-5xl text-gray-800">
                                 {currentMetaData.title}
                             </p>
                             {/* &apos; should replace with this */}

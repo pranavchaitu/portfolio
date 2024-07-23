@@ -19,9 +19,9 @@ export default async function Home() {
     const { blogs } = await getBlogs();
 
     return <div>
-        <div className="p-6 flex justify-center">
+        <div className="mx-2 flex justify-center">
             <div className="w-screen max-w-screen-md lg:max-w-screen-lg">
-                <div className="flex justify-start max-w-3xl">
+                <div className="max-w-3xl border-l">
                     <div>
                         {blogs.map((blog : Blog,i : number) => <Blog 
                             key={i}
@@ -38,7 +38,7 @@ export default async function Home() {
 
 function Blog({ title,content,id } : Blog) {
     return <a href={`https://bloggitt.vercel.app/blog/${id}`} target="_blank">
-        <div className="p-4 hover:bg-slate-50 cursor-pointer rounded-2xl flex flex-col gap-3">
+        <div className="py-6 px-4 hover:bg-slate-50 cursor-pointer rounded-2xl flex flex-col gap-3">
             <div className="font-medium">
                 {title}
             </div>
