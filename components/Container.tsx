@@ -32,7 +32,7 @@ export default function Container({ children } : {
 }) {
     const segment = useSelectedLayoutSegments()
     const currentMetaData = meta[segment[0]] || { title : "",description : "" }
-    return <div className="mt-12 sm:mt-20">
+    return <div className="mt-10 sm:mt-20">
         {segment.length == 1 && (
             <div className="mx-6 flex justify-center mb-6">
                 <div className="w-screen max-w-screen-md lg:max-w-screen-lg">

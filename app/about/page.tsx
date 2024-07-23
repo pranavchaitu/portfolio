@@ -6,7 +6,7 @@ export default function Home() {
             Education :
         </p>
         <br />  
-        <div className="border-l grid grid-cols-1 sm:grid-cols-2 pr-56">
+        <div className="border-l grid grid-cols-1 sm:grid-cols-2 lg:pr-56">
             <StudyData 
                 img={"pragati.jpg"}
                 name={"Pragati Engineering College"}
