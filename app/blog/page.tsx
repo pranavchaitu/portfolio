@@ -19,20 +19,16 @@ export default async function Home() {
     const { blogs } = await getBlogs();
 
     return <div>
-        <div className="mx-2 flex justify-center">
-            <div className="w-screen max-w-screen-md lg:max-w-screen-lg">
-                <div className="max-w-3xl border-l">
-                    <div>
-                        {blogs.map((blog : Blog,i : number) => <Blog 
-                            key={i}
-                            id={blog.id}
-                            title={blog.title}
-                            content={blog.content}
-                        />)}
-                    </div>
-                </div>
+        <div className="max-w-3xl border-l">
+            <div>
+                {blogs.map((blog : Blog,i : number) => <Blog 
+                    key={i}
+                    id={blog.id}
+                    title={blog.title}
+                    content={blog.content}
+                />)}
             </div>
-        </div> 
+        </div>
     </div>
 }
 

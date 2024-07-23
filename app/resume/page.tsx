@@ -1,10 +1,8 @@
 export default function Resume() {
-    return <div className="px-6 mt-4 flex flex-col items-center">
-        <div>
-            <iframe 
-                src="/self/resume.pdf"
-                className="w-screen h-screen max-w-screen-lg"
-            />
-        </div>
+    return <div className="m-6 lg:m-0 flex justify-start">
+        <iframe 
+            src="/self/resume.pdf"
+            className="w-screen h-screen max-w-screen-lg rounded-lg"
+        />
     </div>     
 }

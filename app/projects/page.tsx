@@ -18,20 +18,16 @@ export default function Home() {
         icon: "/projects/icons/dukaan.svg"
     }]
     return <div>
-        <div className="mx-2 flex justify-center">
-            <div className="w-screen max-w-screen-md lg:max-w-screen-lg">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                    {projects.map((project,i) => 
-                        <ProjectItem
-                            key={i}
-                            name={project.name}
-                            link={project.link}
-                            description={project.description}
-                            icon={project.icon}
-                        />
-                    )}
-                </div>
-            </div>
-        </div>      
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project,i) => 
+                <ProjectItem
+                    key={i}
+                    name={project.name}
+                    link={project.link}
+                    description={project.description}
+                    icon={project.icon}
+                />
+            )}
+        </div>
     </div>
 }
