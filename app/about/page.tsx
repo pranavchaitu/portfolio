@@ -48,7 +48,7 @@ function StudyData({ img,name,degree,course,marks,courseWork,years,link } : {
                 alt={'icon'}
                 width={30}
                 height={30} 
-                className=""    
+                className="rounded-full"    
             />
             <div className="text-lg font-medium">
                 {name}
