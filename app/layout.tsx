@@ -23,6 +23,7 @@ export default function RootLayout({
         <Container>
           {children}
         </Container>
+      <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
       </body>
     </html>
   );
