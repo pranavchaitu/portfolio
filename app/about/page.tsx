@@ -12,7 +12,7 @@ export default function Home() {
                 name={"Pragati Engineering College"}
                 degree={"Bachelor of Technology"}
                 course={"Computer Science and Engineering"}
-                marks={[8.6,10]}
+                marks={[8.5,10]}
                 courseWork={['Algorithms',' Data Structures',' DBMS'," SDLC"," OS"]}
                 years={[2022,2026]}
                 link={"https://pragati.ac.in"}

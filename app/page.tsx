@@ -19,11 +19,14 @@ export default function Home() {
               Programmer. Student. Sometimes Chess Player.
             </h1>
             <p className="text-base text-zinc-600 mt-6 sm:mt-5">
-              Hey, I&apos;m Pranav, a third-year <span className="text-zinc-800 font-semibold">CSE student</span> passionate about <span className="text-zinc-800 font-semibold">TypeScript development</span>. I focus on efficient application development and continuously enhance my coding skills.
+              Hey, I&apos;m Pranav, a final-year <span className="text-zinc-800 font-semibold">CSE student</span> passionate about <span className="text-zinc-800 font-semibold">TypeScript development</span>. I focus on efficient application development and continuously enhance my coding skills.
             </p>
             <p className="text-base text-zinc-600 mt-5">
+              Previously, I&apos;ve built projects like a <a href="https://snap.pranava.me/" target="_blank" className="text-zinc-800 font-semibold underline underline-offset-4 cursor-pointer">Social Photo Sharing Platform</a>, <a href="https://github.com/pranavchaitu/wallet" target="_blank" className="text-zinc-800 font-semibold underline underline-offset-4 cursor-pointer">Wallet & Transaction System</a>, and a <a href="https://quantum.pranava.me/" target="_blank" className="text-zinc-800 font-semibold underline underline-offset-4">Multi-Chain Web3 Wallet.</a> 
+            </p>
+            {/* <p className="text-base text-zinc-600 mt-5">
               Previously, I&apos;ve built projects like a <a href="https://medium-by-pranav.vercel.app" target="_blank" className="text-zinc-800 font-semibold underline underline-offset-4 cursor-pointer">Blogging Site</a>, <a href="https://paytm-by-pranav.vercel.app" target="_blank" className="text-zinc-800 font-semibold underline underline-offset-4 cursor-pointer">Wallet/Transaction App</a>, and <a href="https://dukaan-by-pranav.vercel.app" target="_blank" className="text-zinc-800 font-semibold underline underline-offset-4 cursor-pointer">Dukaan Dashboard</a>.
-            </p>  
+            </p>   */}
             <div className="flex gap-6 mt-6 sm:mt-5">
               <a href="https://www.x.com/pranavchaitu" target="_blank">
                 <div className="w-6">

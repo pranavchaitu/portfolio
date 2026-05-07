@@ -1,16 +1,26 @@
 import { ProjectItem } from "@/components/ProjectItem";
 
 export default function Home() {
-    const projects : Record<string,string>[] = [{
+    const projects : Record<string,string>[] = [    {
+        name : "SnapWeb",
+        link : "https://snap.pranava.me",
+        description : "a social photo sharing platform with uploads and interactions",
+        icon: "/projects/icons/snap.svg"
+    }, {
+        name : "Wallet App",
+        link : "https://github.com/pranavchaitu/wallet",
+        description : "a wallet and transaction app with p2p transfers and webhooks",
+        icon: "/projects/icons/paytm.svg"
+    }, {
+        name : "Web3 Wallet",
+        link : "https://quantum.pranava.me",
+        description : "a multi-chain wallet manager for Solana, with knowledge of Ethereum and Bitcoin",
+        icon: "/projects/icons/solana.svg"
+    }, {
         name : "Medium",
         link : "https://medium-by-pranav.vercel.app",
         description : "a simple blogging site which let's you read blogs and post",
         icon: "/projects/icons/medium.svg"
-    },{
-        name : "Paytm",
-        link : "https://paytm-by-pranav.vercel.app",
-        description : "a simple wallet/transaction app which let's you create account and make transactions",
-        icon: "/projects/icons/paytm.svg"
     },{
         name : "Dukaan",
         link : "https://dukaan-by-pranav.vercel.app",
